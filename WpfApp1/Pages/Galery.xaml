@@ -1,0 +1,44 @@
+﻿<Page x:Class="WpfApp1.Pages.Galery"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Gallery">
+
+    <Grid Background="#F5F5F5">
+        <TextBlock Text="Моя галерея"
+                   FontSize="22"
+                   FontWeight="SemiBold"
+                   Foreground="#333"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,10,0,0"/>
+
+        <Border Width="760"
+                Height="367"
+                Background="White"
+                CornerRadius="12"
+                Padding="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                BorderBrush="#E0E0E0"
+                BorderThickness="1" Margin="0,54,0,0">
+
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+              VerticalScrollBarVisibility="Disabled">
+                <StackPanel x:Name="ImagePanel" Orientation="Horizontal"/>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+
+    <Page.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="8"
+                          ShadowDepth="2"
+                          Opacity="0.2"
+                          Color="#000000"/>
+    </Page.Resources>
+</Page>

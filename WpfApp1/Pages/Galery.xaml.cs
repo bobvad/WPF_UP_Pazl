@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Galery.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Galery : Page
     {
-        public MainWindow()
+        public Galery()
         {
             InitializeComponent();
-            frame.Navigate(new Pages.Authtorization());
         }
     }
 }

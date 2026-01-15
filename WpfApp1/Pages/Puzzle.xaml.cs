@@ -16,28 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Authtorization.xaml
+    /// Логика взаимодействия для Puzzle.xaml
     /// </summary>
-    public partial class Authtorization : Page
+    public partial class Puzzle : Page
     {
-        public Authtorization()
+        public Puzzle()
         {
             InitializeComponent();
-        }
-
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RegisterLink_Click(object sender, RoutedEventArgs e)
-        {
-              
-        }
-
-        private void RegisterText_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-
         }
     }
 }

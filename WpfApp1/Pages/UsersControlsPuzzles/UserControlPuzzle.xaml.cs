@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Pages.UsersControlsPuzzles
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для UserControlPuzzle.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserControlPuzzle : UserControl
     {
-        public MainWindow()
+        public UserControlPuzzle()
         {
             InitializeComponent();
-            frame.Navigate(new Pages.Admin.PanelAdmins());
         }
     }
 }

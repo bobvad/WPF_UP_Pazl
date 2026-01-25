@@ -24,5 +24,15 @@ namespace WpfApp1.Pages
         {
             InitializeComponent();
         }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LoginText_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

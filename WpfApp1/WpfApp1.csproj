@@ -69,6 +69,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Admin\PanelAdmins.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Authtorization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,8 +89,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\UsersControlsPuzzles\UserControlPuzzle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Admin\PanelAdmins.xaml.cs">
+      <DependentUpon>PanelAdmins.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Authtorization.xaml.cs">
       <DependentUpon>Authtorization.xaml</DependentUpon>
     </Compile>
@@ -98,6 +109,9 @@
     </Compile>
     <Compile Include="Pages\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersControlsPuzzles\UserControlPuzzle.xaml.cs">
+      <DependentUpon>UserControlPuzzle.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Pages.TaskUsers.CartsForTask
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для TaskControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TaskControl : UserControl
     {
-        public static MainWindow init;
-        public MainWindow()
+        public TaskControl()
         {
             InitializeComponent();
-            init = this;
-            frame.Navigate(new Pages.Authtorization());
         }
     }
 }

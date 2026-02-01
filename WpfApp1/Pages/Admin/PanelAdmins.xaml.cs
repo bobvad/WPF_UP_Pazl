@@ -97,9 +97,8 @@ namespace WpfApp1.Pages.Admin
         {
             bool validName = !string.IsNullOrWhiteSpace(TxtName.Text) && TxtName.Text != "Название пазла";
             bool validImage = ImgPreview.Source != null;
-            bool validPieces = int.TryParse(TxtPieces.Text, out int pieces) && pieces > 0;
 
-            BtnAdd.IsEnabled = validName && validImage && validPieces;
+            BtnAdd.IsEnabled = validName && validImage;
         }
 
         private async void BtnAdd_Click(object sender, RoutedEventArgs e)
@@ -108,17 +107,10 @@ namespace WpfApp1.Pages.Admin
             {
                 string name = TxtName.Text.Trim();
                 string imageUrl = TxtImageUrl.Text.Trim();
-                string piecesText = TxtPieces.Text.Trim();
 
                 if (string.IsNullOrWhiteSpace(name) || name == "Название пазла")
                 {
                     MessageBox.Show("Укажите название пазла.");
-                    return;
-                }
-
-                if (!int.TryParse(piecesText, out int totalPieces) || totalPieces <= 0)
-                {
-                    MessageBox.Show("Укажите корректное количество деталей.");
                     return;
                 }
 
@@ -133,8 +125,7 @@ namespace WpfApp1.Pages.Admin
                     var formData = new MultipartFormDataContent
                     {
                        { new StringContent(name), "Name" },
-                       { new StringContent(imageUrl), "FullImage" },
-                       { new StringContent(totalPieces.ToString()), "TotalPieces" }
+                       { new StringContent(imageUrl), "FullImage" }
                     };
 
                     string apiUrl = "https://localhost:7294/api/Puzzles/";
@@ -146,9 +137,8 @@ namespace WpfApp1.Pages.Admin
                         var jsonResponse = await response.Content.ReadAsStringAsync();
                         MessageBox.Show("Пазл успешно добавлен!");
 
-                        TxtName.Text = "Название пазла";
+                        TxtName.Text = "";
                         TxtImageUrl.Text = "";
-                        TxtPieces.Text = "Количество деталей";
                         ImgPreview.Source = null;
                     }
                     else

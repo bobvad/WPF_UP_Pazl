@@ -116,31 +116,6 @@
                 </StackPanel>
             </Border>
 
-            <Border Grid.Row="4" Background="White" CornerRadius="6" Padding="16" Margin="0,0,0,20"
-                    BorderBrush="#E2E8F0" BorderThickness="1">
-                <StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,6">
-                        <TextBlock Text="Количество деталей" FontSize="15" FontWeight="Medium" Foreground="#2D3748"/>
-                        <TextBlock Text="*" FontSize="15" FontWeight="Medium" Foreground="#E53E3E" Margin="2,0,0,0"/>
-                    </StackPanel>
-                    <TextBlock Text="Введите количество (только цифры)" FontSize="12" Foreground="#718096" Margin="0,0,0,8"/>
-                    <TextBox x:Name="TxtPieces" Padding="12,10" FontSize="13" PreviewTextInput="NumberValidationTextBox"
-                             BorderBrush="#CBD5E0" BorderThickness="1.5" Background="#F7FAFC" Width="180">
-                        <TextBox.Style>
-                            <Style TargetType="TextBox">
-                                <Setter Property="Foreground" Value="#2D3748"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsFocused" Value="True">
-                                        <Setter Property="BorderBrush" Value="#4299E1"/>
-                                        <Setter Property="Background" Value="#FFFFFF"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </TextBox.Style>
-                    </TextBox>
-                </StackPanel>
-            </Border>
-
             <Border Grid.Row="5" Background="White" CornerRadius="6" Padding="16" Margin="0,0,0,12"
                     BorderBrush="#E2E8F0" BorderThickness="1">
                 <StackPanel>

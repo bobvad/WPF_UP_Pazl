@@ -24,5 +24,25 @@ namespace WpfApp1.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnViewGallery_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnViewTasks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnCompleteTask_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

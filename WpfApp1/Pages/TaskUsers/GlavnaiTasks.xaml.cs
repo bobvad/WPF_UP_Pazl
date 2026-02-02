@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages.TaskUsers
 {
     /// <summary>
-    /// Логика взаимодействия для TaskUsers.xaml
+    /// Логика взаимодействия для GlavnaiTasks.xaml
     /// </summary>
-    public partial class TaskUsers : Page
+    public partial class GlavnaiTasks : Page
     {
-        public TaskUsers()
+        public GlavnaiTasks()
         {
             InitializeComponent();
+        }
+
+        private void CreateTaskButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.init.frame.Navigate(new Pages.TaskUsers.TaskWindow());
+        }
+
+        private void ExecuteTaskButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

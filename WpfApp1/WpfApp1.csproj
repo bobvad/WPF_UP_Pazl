@@ -96,7 +96,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\TaskUsers\TaskUsers.xaml">
+    <Page Include="Pages\TaskUsers\GlavnaiTasks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TaskUsers\TaskWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,8 +128,11 @@
     <Compile Include="Pages\TaskUsers\CartsForTask\TaskControl.xaml.cs">
       <DependentUpon>TaskControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TaskUsers\TaskUsers.xaml.cs">
-      <DependentUpon>TaskUsers.xaml</DependentUpon>
+    <Compile Include="Pages\TaskUsers\GlavnaiTasks.xaml.cs">
+      <DependentUpon>GlavnaiTasks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TaskUsers\TaskWindow.xaml.cs">
+      <DependentUpon>TaskWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\UsersControlsPuzzles\UserControlPuzzle.xaml.cs">
       <DependentUpon>UserControlPuzzle.xaml</DependentUpon>

@@ -9,7 +9,7 @@
       Title="Gallery">
 
     <Grid Background="#F5F5F5">
-        <TextBlock Text="Моя галерея"
+        <TextBlock Text="Моя галерея собранных пазлов"
                    FontSize="22"
                    FontWeight="SemiBold"
                    Foreground="#333"

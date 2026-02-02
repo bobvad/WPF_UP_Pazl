@@ -51,7 +51,7 @@ namespace WpfApp1.Pages
                     MessageBox.Show($"Успешный вход! Привет, {user.Login}",
                         "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                    //MainWindow.init.frame.Navigate(new Pages.);
+                    MainWindow.init.frame.Navigate(new Pages.TaskUsers.GlavnaiTasks());
 
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)

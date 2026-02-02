@@ -24,5 +24,10 @@ namespace WpfApp1.Pages.TaskUsers.CartsForTask
         {
             InitializeComponent();
         }
+
+        private void DetailsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
